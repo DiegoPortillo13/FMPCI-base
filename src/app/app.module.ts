@@ -1,16 +1,46 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { CotizacionesComponent } from './cotizaciones/cotizaciones.component';
+import { InventarioComponent } from './inventario/inventario.component';
+import { EmpresaComponent } from './empresa/empresa.component';
+import { EstadisticasComponent } from './estadisticas/estadisticas.component';
+import { AddpComponent } from './addp/addp.component';
+import { DelpComponent } from './delp/delp.component';
+import { GetallpComponent } from './getallp/getallp.component';
+import { GetpComponent } from './getp/getp.component';
+import { UpdpComponent } from './updp/updp.component';
+import { BodyComponent } from './body/body.component';
+import { TablaComponent } from './tabla/tabla.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidenavComponent,
+    ProyectosComponent,
+    CotizacionesComponent,
+    InventarioComponent,
+    EmpresaComponent,
+    EstadisticasComponent,
+    AddpComponent,
+    DelpComponent,
+    GetallpComponent,
+    GetpComponent,
+    UpdpComponent,
+    BodyComponent,
+    TablaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
