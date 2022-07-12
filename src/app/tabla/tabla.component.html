@@ -1,37 +1,49 @@
-<table class="table table-sm">
-    <thead class="tabla-formato">
-        <th colspan="2">Numero</th>
-        <th colspan="2">Nombre</th>
-        <th colspan="2">Prioridad</th>
-        <th colspan="2">Fecha</th>
-        <th colspan="2">Cliente</th>
-        <th colspan="2">Descripcion</th>
-        <th colspan="2">Estado</th>
-        <th colspan="2">Cantidad</th>
-        <th colspan="2">Fecha Requerida</th>
-        <th colspan="2">Fecha de Finalizcion</th>
-        <th colspan="2">Fecha de entrega</th>
-        <th colspan="2">Cotizacion</th>
-        <th class="fal fa-trash"></th>
-        <th class="fal fa-pencil" style="margin-left:1rem ;"></th>
-
-    </thead>
-    <tbody>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-        <td class="tabla-formato"></td>
-    </tbody>
-  </table>
-  
-  
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                
+            </div>
+            <div class="card-body">
+                <table class="table tabla-formato">
+                    <thead>
+                        <tr>
+                            <th>Numero de proyecto</th>
+                            <th>Nombre del proyecto</th>
+                            <th>Prioridad</th>
+                            <th>Fecha</th>
+                            <th>Cliente</th>
+                            <th>Descripcion</th>
+                            <th>Estado</th>
+                            <th>Cantidad</th>
+                            <th>Fecha requerida</th>
+                            <th>Fecha finalizacion</th>
+                            <th>Fecha entrega</th>
+                            <th>Numero de cortizacion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a class="button-t" [routerLink]="['/proyectos/updp']" ><i class="fal fa-pencil tam"></i></a>  
+                                <a class="button-t" ><i class="fal fa-trash tam"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

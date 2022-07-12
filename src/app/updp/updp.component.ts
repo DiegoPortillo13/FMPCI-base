@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { listData } from './prio';
+import { stData } from './status';
 
 @Component({
   selector: 'app-updp',
@@ -11,5 +13,6 @@ export class UpdpComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  list = listData;
+  status= stData;
 }

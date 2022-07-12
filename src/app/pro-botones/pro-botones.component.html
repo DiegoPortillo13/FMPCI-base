@@ -1,0 +1,8 @@
+<ul class="sidenav-nav">
+    <i class="sidenav-nav-item" *ngFor="let data of botData">
+        <a class="sidenav-nav-link" [routerLink]="[data.routeLink]"  routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}">
+            <i class="sidenav-link-icon" [class]="data.icon"></i>
+            <span class="sidenav-link-text">{{data.label}}</span>
+        </a>
+    </i>
+</ul>

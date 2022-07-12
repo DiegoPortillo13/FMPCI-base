@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,10 @@ import { GetpComponent } from './getp/getp.component';
 import { UpdpComponent } from './updp/updp.component';
 import { BodyComponent } from './body/body.component';
 import { TablaComponent } from './tabla/tabla.component';
+import { ProBodyComponent } from './pro-body/pro-body.component';
+import { ProBotonesComponent } from './pro-botones/pro-botones.component';
+import { AgGridModule } from 'ag-grid-angular';
+import { AddFormComponent } from './add-form/add-form.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +39,19 @@ import { TablaComponent } from './tabla/tabla.component';
     GetpComponent,
     UpdpComponent,
     BodyComponent,
-    TablaComponent
+    TablaComponent,
+    ProBodyComponent,
+    ProBotonesComponent,
+    AddFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AgGridModule,
+    ReactiveFormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

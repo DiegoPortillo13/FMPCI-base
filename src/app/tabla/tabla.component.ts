@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-tabla',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabla.component.scss']
 })
 export class TablaComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(private projecService: ProjectService) { }
 
   ngOnInit(): void {
+    
   }
 
 }

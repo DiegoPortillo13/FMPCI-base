@@ -1,1 +1,62 @@
-<p>updp works!</p>
+<div class="row">
+    <div class="col-6">
+        <form>
+            <div class="mb-3">
+              <label class="form-label cbl">Numero de Proyecto</label>
+              <input type="number" class="form-control" id="numProyecto" aria-describedby="numProyecto">             
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Nombre del Proyecto</label>
+              <input type="text" class="form-control" id="nommProyecto" aria-describedby="nomProyecto">             
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Prioridad</label>
+              <select class="form-select form-select-sm">
+                <option *ngFor="let item of list" [value]="item.item">{{item.item}}</option>
+              </select>            
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Fecha</label>
+              <input type="date" class="form-control" id="fecha" aria-describedby="fecha">                         
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Cliente</label>
+              <input type="text" class="form-control" id="cliente" aria-describedby="cliente">             
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Descripcion</label>
+              <input type="text" class="form-control" id="descripcion" aria-describedby="descripcion">             
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Estado</label>
+              <select class="form-select form-select-sm">
+                <option *ngFor="let item of status" [value]="item.status">{{item.status}}</option>
+              </select>             
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Cantidad</label>
+              <input type="text" class="form-control" id="cantidad" aria-describedby="cantidad">             
+            </div>
+            <div class="mb-3">
+                <label class="form-label cbl">Fecha Requerida</label>
+                <input type="date" class="form-control" id="fRequerida" aria-describedby="fecha">             
+            </div>
+            <div class="mb-3">
+                <label class="form-label cbl">Fecha Finalizacion</label>
+                <input type="date" class="form-control" id="fFinalizacion" aria-describedby="fecha">             
+            </div>
+            <div class="mb-3">
+                <label class="form-label cbl">Fecha de Entrega</label>
+                <input type="date" class="form-control" id="fEntrega" aria-describedby="fecha">       
+            </div>
+            <div class="mb-3">
+              <label class="form-label cbl">Numero de Cotizacion</label>
+              <input type="number" class="form-control" id="numProyecto" aria-describedby="numProyecto">             
+            </div>
+            
+            
+            <button type="button" class="btn btn-primary">Agregar</button>
+            <button type="button" class="btn btn-primary" style="margin: 10px;" [routerLink]="['/proyectos/getallp']" >Cancelar</button>
+          </form>
+    </div>
+</div>

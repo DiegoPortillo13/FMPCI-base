@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-6">
+    <form [formGroup]="formAgrPro" (ngSubmit)="enviarDatos()">
+      <div class="mb-3">
+        <label class="form-label cbl">Numero de Proyecto</label>
+        <input type="number" class="form-control" id="numProyecto" formControlName="numProyecto"
+          placeholder="Escriba el numero identificador">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Nombre del Proyecto</label>
+        <input type="text" class="form-control" id="nommProyecto" formControlName="nomProyecto"
+          placeholder="Escriba el nombre">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Prioridad</label>
+        <select class="form-select form-select-sm" formControlName="prioridad" >
+          <option *ngFor="let item of list" [value]="item.item" >{{item.item}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Fecha</label>
+        <input type="date" class="form-control" id="fecha" formControlName="fecha">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Cliente</label>
+        <input type="text" class="form-control" id="cliente" formControlName="cliente" placeholder="Nombre del cliente">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Descripcion</label>
+        <input type="text" class="form-control" id="descripcion" formControlName="descripcion" placeholder="Descripcion del proyecto">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Estado</label>
+        <select class="form-select form-select-sm" formControlName="estatus">
+          <option *ngFor="let item of status" [value]="item.status" >{{item.status}}</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Cantidad</label>
+        <input type="text" class="form-control" id="cantidad" formControlName="cantidad" placeholder="Cantidad de material y/o piezas">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Fecha Requerida</label>
+        <input type="date" class="form-control" id="fRequerida" formControlName="fRequerida">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Fecha Finalizacion</label>
+        <input type="date" class="form-control" id="fFinalizacion" formControlName="fFinalizacion">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Fecha de Entrega</label>
+        <input type="date" class="form-control" id="fEntrega" formControlName="fEntrega">
+      </div>
+      <div class="mb-3">
+        <label class="form-label cbl">Numero de Cotizacion</label>
+        <input type="number" class="form-control" id="numCotizacion" formControlName="numCotizacion" placeholder="Numero de cotizacion">
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
+</div>
